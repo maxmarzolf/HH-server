@@ -4,7 +4,7 @@ import urllib.request
 from email.message import EmailMessage
 
 page = urllib.request.urlopen('http://aws1.harrishillsoaring.org/wordpress/')
-if page.status == 200:
+if page.status != 200:
     msg = EmailMessage()
     msg.set_content('Server Status ' + page.reason)
 
