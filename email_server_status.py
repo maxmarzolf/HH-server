@@ -1,14 +1,16 @@
 #!/usr/bin/python3.8
 import smtplib
-import urllib.request
+import requests
 from email.message import EmailMessage
 
-page = urllib.request.urlopen('http://aws1.harrishillsoaring.org/wordpress/')
-if page.status != 200:
+
+page = requests.get('http://aws1.harrishillsoaring.org/wordpress/', auth=('user', 'pass'))
+if page.status_code != 200:
+
     msg = EmailMessage()
     msg.set_content('Server Status ' + page.reason)
 
-    msg['Subject'] = 'Server Error'
+    msg['Subject'] = 'Server Status'
     msg['From'] = 'marzolfm@aws1.harrishillsoaring.org'
     msg['To'] = 'marzolfm@localhost, jmurtari@localhost'
 
