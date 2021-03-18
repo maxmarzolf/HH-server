@@ -1,0 +1,115 @@
+/* Remove Metadata */
+.author {
+    display: None;
+}
+
+.section.section-blog-info {
+    display: None;
+}
+
+/* FAQs */
+.helpie-faq.accordions .accordion__header {
+    padding: 1em 1.75em 1em 1em;
+    color: #000;
+}
+
+.helpie-faq.accordions .collection-title {
+    color: #000;
+}
+
+/* Our Mission */
+.hestia-features .hestia-title {
+    color: #000;
+    font-size: 37px;
+}
+
+.hestia-features .description {
+    color: #000;
+}
+
+.hestia-features .hestia-features-content .feature-box .info-title {
+    color: #000;
+    font-size: 18px;
+}
+
+.hestia-features .hestia-features-content .feature-box p {
+    color: #000;
+    font-size: 15px;
+}
+
+/* Members Dropdown */
+.caret-wrap {
+    display: None;
+}
+
+/* Featured Images */
+.page-id-6 .page-header.header-small .container {
+    padding-bottom: 275px;
+}
+
+.page-id-6 .header-filter {
+    background-size: cover;
+    z-index: 0;
+    background-position: center 55px;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+
+.page-id-33 .page-header.header-small .container {
+    padding-bottom: 275px;
+}
+
+.page-id-33 .header-filter {
+    background-size: cover;
+    z-index: 0;
+    background-position: center -25px;
+    background-repeat: no-repeat;
+}
+
+.page-id-7 .page-header.header-small .container {
+    padding-bottom: 275px;
+}
+
+.page-id-7 .header-filter {
+    background-size: cover;
+    z-index: 0;
+    background-position: center 70px;
+    background-repeat: no-repeat;
+
+}
+
+.header-filter::before {
+    background: transparent;
+}
+
+/* Mobile Featured Image */
+@media screen and (max-width: 675px) {
+    .page-id-6 .header-filter {
+        background-size: contain;
+    }
+
+    .page-id-6 .page-header.header-small .container {
+        padding-bottom: 0;
+        height: 250px
+    }
+
+    .page-id-33 .header-filter {
+        background-size: contain;
+        background-position: center 45px;
+    }
+
+    .page-id-33 .page-header.header-small .container {
+        padding-bottom: 0;
+        height: 250px
+    }
+
+    .page-id-7 .header-filter {
+        background-size: contain;
+        background-position: center 65px;
+    }
+
+    .page-id-7 .page-header.header-small .container {
+        padding-bottom: 0;
+        height: 250px
+    }
+}
